@@ -1,11 +1,43 @@
 <!DOCTYPE html> <!-- Doctype html berättar för webbläsaren att vi kommer använda ett html dokument -->
 <html lang="en"> <!-- Allt som ska inkluderas i html dokumentet ska finnas mellan öppningen och stängningen av html flikarna -->
-<head>
+<head><!-- Innehåller meta-data, alltså data om själva dokumentet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Pet Page</title> <!-- titeln är det som står i fliken på toppen av webbsidan, i detta fal står det "Simple Pet Page"-->
 </head>
 <body>
-    <h1>Simple Pet Page</h1> <!-- detta är rubriken på webbsidan, h1 är den största rubriken, men går ner ända till h6 -->
+
+    <header><!--Toppen av webbsidan, innehåller oftast loggan, nav-bar och lite andra grejer-->
+        <div class="logo-section"> <!--Innehåller logo-->
+            <img class="logo" src="img/logo.svg" alt="logo"><!--src är att jag kallar på bilden i filen img jag har sparat tillsammans med index.html-->
+        </div>
+        <nav class="navigation-section"> <!--Detta ska bli navigationsmenyn-->
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Display</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main><!--Här är vad the main content ska vara-->
+        <div class="container">
+            <section id="home" class="cover-sect">
+                <div class="title-text">
+                    <h1>Welcome</h1><!--Rubriken-->
+                    <p>~ This website offers personalised services for pets. ~</p>
+                </div>
+                <div class="box-feature">
+                    <img class="cover-image" src="img/cat.png" alt="just a cat" />
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer><!--längts ner på sidan, typ kontaktinfo osv-->
+
+    </footer>
+  
 </body>
 </html>
